@@ -7,7 +7,7 @@ data "aws_iam_policy_document" "test_policy" {
     ]
   }
 }
-resource "aws_iam_role" "tfc_role" {
+resource "aws_iam_role" "example_role" {
   name = "test_role_from_account"
   assume_role_policy = jsonencode({
     Version = "2012-10-17"
